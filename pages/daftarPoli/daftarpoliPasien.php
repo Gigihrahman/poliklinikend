@@ -9,7 +9,7 @@ include_once("koneksi.php");
 // }
 
 $no_rm = '';
-$nama = $_SESSION['nama'];
+$nama = $_SESSION['username'];
 
 $query = "SELECT no_rm FROM pasien WHERE nama = ?";
 $stmt = $mysqli->prepare($query);
